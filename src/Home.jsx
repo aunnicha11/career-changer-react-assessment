@@ -1,3 +1,5 @@
+import React from 'react';
+
 const mockEmployees = [
   {
     id: 0,
@@ -17,17 +19,21 @@ const mockEmployees = [
     lastname: "lord",
     position: "Designer"
   },
-]
+];
 
 const Home = () => {
-
   return (
     <div>
-
+      <h2>Employee List</h2>
+      <ul>
+        {mockEmployees.map(employee => (
+          <li key={employee.id}>
+            <strong>{`${employee.name} ${employee.lastname}`}</strong> - {employee.position}
+          </li>
+        ))}
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-
-
-export default Home
+export default Home;
