@@ -8,8 +8,6 @@ import "./App.css";
 
 const HomeAdmin = () => {
 
-  <HomePage />
-
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
   const [position, setPosition] = useState('');
@@ -49,23 +47,23 @@ const HomeAdmin = () => {
     <>
       <div className="homepage">
         <Navbar />
-        <h1>Generation Thailand <br /><br />React - Assessment</h1>
+        <HomePage />
       </div>
 
       <div className="user-creation">
         <h2>Create User Here</h2>
         <div className="input-row-container">
           <div className="input-row">
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" value={name} onChange={handleNameChange} />
+            {/* <label htmlFor="name">Name:</label> */}
+            <input type="text" id="name" value={name} onChange={handleNameChange} placeholder="Enter your name" />
           </div>
           <div className="input-row">
-            <label htmlFor="lastName">Last Name:</label>
-            <input type="text" id="lastName" value={lastName} onChange={handleLastNameChange} />
+            {/* <label htmlFor="lastName">Last Name:</label> */}
+            <input type="text" id="lastName" value={lastName} onChange={handleLastNameChange} placeholder="Enter your last name" />
           </div>
           <div className="input-row">
-            <label htmlFor="position">Position:</label>
-            <input type="text" id="position" value={position} onChange={handlePositionChange} />
+            {/* <label htmlFor="position">Position:</label> */}
+            <input type="text" id="position" value={position} onChange={handlePositionChange} placeholder="Enter your position" />
           </div>
           <button onClick={handleSave}>Save</button>
         </div>

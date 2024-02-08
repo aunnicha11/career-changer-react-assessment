@@ -1,33 +1,100 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size:cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+
+/* body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
-}
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: salmon;
+} */
 
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: gray;
-  color: #fff;
+  height: 60px;
   padding: 10px 20px 10px 0px; /* top right bottom left */
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   z-index: 1000;
+  border-bottom: 5px solid #e6dfcd;
+  background-color: transparent;
+  font-size: 20px;
 }
 
 .navbar ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 40px;
   padding: 0;
   display: flex;
 }
 
 .navbar li {
   margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff5c8d;
 }
 
 .login-container {
@@ -85,16 +152,39 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  /* color: #ff77a9; */
+  margin-bottom: 20px;
 }
 
 .button-container {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: #ff77a9; /* Cute pink color */
+  color: #fff;
+  padding: 10px 20px 10px;
+  border: none;
+  border-radius: 25px; /* Make it rounder */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff5c8d; /* Lighter pink on hover */
 }
 
 .button-space {
-  width: 10px;
+  width: 40px;
 }
 
 .user-creation {
@@ -109,11 +199,32 @@ body {
 }
 
 .input-row {
-  margin-right: 10px;
+  margin-right: 30px;
+  /* margin-bottom: 15px; */
 }
 
 .user-table {
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+/* label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+} */
+
+input {
+  width: 300px; /* Set the width of the input boxes */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff77a9; /* Cute pink color on focus */
 }
 
 table {
@@ -125,10 +236,9 @@ table {
 th, td {
   border: 1px solid #ddd;
   padding: 8px;
-  text-align: left;
+  text-align: center;
 }
 
 th {
   background-color: #f2f2f2;
 }
-

@@ -11,7 +11,6 @@ const HomePage = () => {
         <Navbar />
         <h1>Generation Thailand <br /><br />React - Assessment</h1>
       </div>
-
       <HomeButtons />
     </>
   );
