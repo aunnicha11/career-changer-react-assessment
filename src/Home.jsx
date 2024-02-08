@@ -1,39 +1,20 @@
+// Home.jsx
 import React from 'react';
+import "./App.css";
+import Navbar from './Navbar';
+import HomeButtons from './Home-button';
 
-const mockEmployees = [
-  {
-    id: 0,
-    name: "mock",
-    lastname: 'mocklastname',
-    position: "Manager"
-  },
-  {
-    id: 1,
-    name: "employee 1",
-    lastname: "em",
-    position: "Engineer"
-  },
-  {
-    id: 2,
-    name: "employee 2",
-    lastname: "lord",
-    position: "Designer"
-  },
-];
-
-const Home = () => {
+const HomePage = () => {
   return (
-    <div>
-      <h2>Employee List</h2>
-      <ul>
-        {mockEmployees.map(employee => (
-          <li key={employee.id}>
-            <strong>{`${employee.name} ${employee.lastname}`}</strong> - {employee.position}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className="homepage">
+        <Navbar />
+        <h1>Generation Thailand <br /><br />React - Assessment</h1>
+      </div>
+
+      <HomeButtons />
+    </>
   );
 };
 
-export default Home;
+export default HomePage;
