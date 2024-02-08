@@ -6,9 +6,7 @@ const Owner = () => {
   return (
     <div className="center-container">
       <h1>Louktarn - Group F - 04</h1>
-      <p>
         <img src="../meow.jpg" alt="Meow" />
-      </p>
       <p>Short Biography:</p>
       <p className="center-text">
         Hi, I'm Aunnicha Susukpitakkul. I graduated in Economics and have about
