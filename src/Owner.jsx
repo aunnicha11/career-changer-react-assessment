@@ -7,7 +7,7 @@ const Owner = () => {
     <div className="center-container">
       <h1>Louktarn - Group F - 04</h1>
       <p>
-        <img src="../public/meow.jpg" alt="Meow" />
+        <img src="../meow.jpg" alt="Meow" />
       </p>
       <p>Short Biography:</p>
       <p className="center-text">
