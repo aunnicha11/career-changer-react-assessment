@@ -9,8 +9,7 @@ const Owner = () => {
       <div className="center-container">
         <h1>Louktarn - Group F - 04</h1>
           <img src="../meow.jpg" alt="Meow" />
-        <p>Short Biography:</p>
-        <p className="center-text">
+        <p className="center-text"><strong>Short Biography: </strong><br/><br/>
           Hi, I'm Aunnicha Susukpitakkul. I graduated in Economics and have about
           a year of work experience. I used to code in PHP, JavaScript, CSS, and
           HTML. I enjoy problem-solving through coding and aim to become a
